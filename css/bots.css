@@ -1,0 +1,144 @@
+:root {
+  --azul-oscuro: #124185;
+  --azul-medio: #135fc9;
+  --azul-panel: #eef6fc;
+  --blanco: #fff;
+  --gris-borde: #e2e8f0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: var(--azul-oscuro);
+}
+
+body {
+  min-height: 100vh;
+  background: url('../img/image.jpg') no-repeat center center fixed,
+    linear-gradient(125deg, var(--azul-medio) 65%, var(--azul-panel) 100%);
+  background-size: cover, cover;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: var(--blanco) !important;
+  box-shadow: 0 2px 14px #12418524;
+  border-bottom: 2px solid var(--azul-medio);
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  color: var(--azul-medio) !important;
+  font-size: 1.45em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .text-white {
+  color: var(--azul-oscuro) !important;
+  background: none;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.navbar a.text-white {
+  color: var(--azul-medio) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MISMO PANEL BLANCO QUE ESTUDIANTES */
+.container {
+  background: var(--blanco);
+  border-radius: 16px;
+  box-shadow: 0 8px 26px #135fc931;
+  margin-top: 42px;
+  margin-bottom: 24px;
+  padding: 32px 22px 22px 22px;
+  max-width: 900px;
+}
+
+h2 {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  font-size: 1.5em;
+}
+
+/* TARJETAS DE BOTS */
+.bot-card {
+  border-radius: 12px;
+  border: 1px solid var(--gris-borde);
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  background: #f8fbff;
+  box-shadow: 0 1px 4px #1241851a;
+}
+
+.bot-card h4 {
+  margin: 0 0 4px 0;
+  color: var(--azul-medio);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.bot-id-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.bot-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.bot-meta {
+  font-size: 0.88rem;
+}
+
+/* Botón Mostrar/Ocultar */
+.show-btn {
+  padding: 2px 12px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--azul-medio);
+  background: var(--azul-medio);
+  color: #fff;
+  cursor: pointer;
+}
+
+.show-btn:hover {
+  background: #0f4ea5;
+}
+
+/* Footer igual al de estudiantes */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  color: var(--azul-oscuro);
+  background: var(--blanco);
+  font-size: 1.0em;
+  letter-spacing: 0.8px;
+  border-top: 1.5px solid var(--azul-medio);
+  font-weight: 600;
+  padding: 12px 0 10px 0;
+  z-index: 99;
+}

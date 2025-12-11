@@ -1,0 +1,116 @@
+:root {
+  --azul-oscuro: #004aad;
+  --azul-medio: #135fc9;
+  --azul-panel: #eef6fc;
+  --blanco: #fff;
+  --gris-borde: #e2e8f0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: var(--azul-oscuro);
+}
+
+body {
+  background: url('img/fondo.jpg') no-repeat center center fixed,
+    linear-gradient(125deg, var(--azul-medio) 68%, var(--azul-panel) 100%);
+  background-size: cover, cover;
+  min-height: 100vh;
+}
+
+.incitap-brand-bar {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  font-size: 2.3em;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 0 8px 0;
+  letter-spacing: 2px;
+  box-shadow: 0 3px 16px var(--azul-oscuro)33;
+  border-bottom: 2px solid var(--blanco);
+}
+
+.dashboard-container {
+  background: var(--blanco);
+  max-width: 950px;
+  margin: 44px auto 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px var(--azul-oscuro)29;
+  padding: 2.5em 2em;
+}
+
+.dashboard-cards .card {
+  border-radius: 20px;
+  background: var(--azul-panel);
+  transition: box-shadow .18s, background 0.18s;
+  cursor: pointer;
+  border: 1.5px solid var(--gris-borde);
+  box-shadow: 0 1px 8px var(--azul-oscuro)20;
+}
+
+.dashboard-cards .card:hover {
+  box-shadow: 0 4px 18px var(--azul-oscuro)22;
+  background: #e3f0fe;
+}
+
+.dashboard-cards h5 {
+  color: var(--azul-medio);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.dashboard-cards .card-body small {
+  color: #3b5998;
+  font-weight: 500;
+}
+
+.btn-outline-danger.btn-sm {
+  border-radius: 6px;
+  padding: 2px 16px;
+  font-weight: 600;
+  font-size: 0.97em;
+}
+
+.alert-info {
+  background: var(--azul-panel);
+  border: 2px solid var(--azul-medio);
+  color: var(--azul-medio);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.footer {
+  width: 100vw;
+  text-align: center;
+  color: var(--azul-oscuro);
+  background: var(--blanco);
+  font-size: 1.05em;
+  letter-spacing: 0.6px;
+  border-top: 1.5px solid var(--azul-medio);
+  font-weight: 600;
+  padding: 16px 0 12px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+@media (max-width:700px){
+  .dashboard-container { padding: 1em 4px; max-width:98vw; }
+  .incitap-brand-bar { font-size:1.5em;}
+  .dashboard-cards .card { font-size:0.97em;}
+  .footer { font-size:0.95em; padding:10px 0 7px 0;}
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--gris-borde);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--azul-medio);
+  border-radius: 6px;
+}

@@ -1,0 +1,160 @@
+:root {
+  --azul-oscuro: #124185;
+  --azul-medio: #135fc9;
+  --azul-panel: #eef6fc;
+  --blanco: #fff;
+  --gris-borde: #e2e8f0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  color: var(--azul-oscuro);
+}
+
+body {
+  min-height: 100vh;
+  background: url('../img/image.jpg') no-repeat center center fixed,
+    linear-gradient(125deg, var(--azul-medio) 65%, var(--azul-panel) 100%);
+  background-size: cover, cover;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: var(--blanco) !important;
+  box-shadow: 0 2px 14px #12418524;
+  border-bottom: 2px solid var(--azul-medio);
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  color: var(--azul-medio) !important;
+  font-size: 1.45em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .text-white {
+  color: var(--azul-oscuro) !important;
+  background: none;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.navbar a.text-white {
+  color: var(--azul-medio) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  background: var(--blanco);
+  border-radius: 16px;
+  box-shadow: 0 8px 26px #135fc931;
+  margin-top: 42px;
+  margin-bottom: 24px;
+  padding: 38px 18px 20px 18px;
+  max-width: 1100px;      /* antes 900px para que el botón no se salga */
+}
+
+h2 {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+  background: none;
+  font-size: 2em;
+}
+
+.table {
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 2px 9px #12418512;
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-primary {
+  background: var(--azul-medio) !important;
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-color: var(--gris-borde) !important;
+}
+
+td,
+th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table > tbody > tr {
+  transition: background 0.2s;
+}
+
+.table > tbody > tr:hover {
+  background: var(--azul-panel);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  color: var(--azul-oscuro);
+  background: var(--blanco);
+  font-size: 1.08em;
+  letter-spacing: 0.8px;
+  border-top: 1.5px solid var(--azul-medio);
+  font-weight: 600;
+  padding: 16px 0 12px 0;
+  z-index: 99;
+}
+
+/* Opcional: si usas <div class="table-responsive"> envolver la tabla */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 14px 4px 8px 4px;
+    max-width: 98vw;
+    margin-top: 27px;
+  }
+  h2 {
+    font-size: 1.23em;
+    margin-bottom: 17px;
+  }
+  .navbar-brand {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 1em;
+    padding: 12px 0 7px 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--gris-borde);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--azul-medio);
+  border-radius: 6px;
+}
